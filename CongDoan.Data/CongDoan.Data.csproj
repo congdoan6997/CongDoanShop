@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CongDoanShopDbContext.cs" />
+    <Compile Include="Infacstructure\DbFactory.cs" />
+    <Compile Include="Infacstructure\Disposable.cs" />
+    <Compile Include="Infacstructure\IDbFactory.cs" />
+    <Compile Include="Infacstructure\IRepository.cs" />
+    <Compile Include="Infacstructure\IUnitOfWork.cs" />
+    <Compile Include="Infacstructure\RepositoryBase.cs" />
+    <Compile Include="Infacstructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
