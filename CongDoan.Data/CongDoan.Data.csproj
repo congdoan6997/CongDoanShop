@@ -55,7 +55,14 @@
     <Compile Include="Infacstructure\IUnitOfWork.cs" />
     <Compile Include="Infacstructure\RepositoryBase.cs" />
     <Compile Include="Infacstructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201805252317342_InitialDb.cs" />
+    <Compile Include="Migrations\201805252317342_InitialDb.Designer.cs">
+      <DependentUpon>201805252317342_InitialDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProductCategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,6 +77,11 @@
       <Project>{76e69c0b-530d-4be7-b7d8-4c1b98938d4c}</Project>
       <Name>CongDoan.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805252317342_InitialDb.resx">
+      <DependentUpon>201805252317342_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

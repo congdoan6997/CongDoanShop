@@ -10,7 +10,7 @@
             this._dbFactory = dbFactory;
         }
 
-        public CongDoanShopDbContext DbContext => _dbContext ?? (_dbFactory.Init());
+        public CongDoanShopDbContext DbContext => _dbContext ?? (_dbContext = _dbFactory.Init());
 
         public void Commit()
         {

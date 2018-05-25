@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongDoan.Data", "CongDoan.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongDoan.UnitTest", "CongDoan.UnitTest\CongDoan.UnitTest.csproj", "{CED20F39-5AC4-4D99-983F-B58727AA200F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongDoan.Web", "CongDoan.Web\CongDoan.Web.csproj", "{4B705AA0-00CA-428D-AE1F-361DF1E1EC0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongDoan.Web", "CongDoan.Web\CongDoan.Web.csproj", "{7B2E70CF-03FE-4B69-9A19-81E58467FE9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{CED20F39-5AC4-4D99-983F-B58727AA200F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED20F39-5AC4-4D99-983F-B58727AA200F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED20F39-5AC4-4D99-983F-B58727AA200F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B705AA0-00CA-428D-AE1F-361DF1E1EC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B705AA0-00CA-428D-AE1F-361DF1E1EC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B705AA0-00CA-428D-AE1F-361DF1E1EC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B705AA0-00CA-428D-AE1F-361DF1E1EC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2E70CF-03FE-4B69-9A19-81E58467FE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2E70CF-03FE-4B69-9A19-81E58467FE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2E70CF-03FE-4B69-9A19-81E58467FE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2E70CF-03FE-4B69-9A19-81E58467FE9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

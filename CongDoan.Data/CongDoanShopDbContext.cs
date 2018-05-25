@@ -5,7 +5,7 @@ namespace CongDoan.Data
 {
     public class CongDoanShopDbContext : DbContext
     {
-        public CongDoanShopDbContext() : base("CongDoanShopConnection")
+        public CongDoanShopDbContext() : base("CongDoanShop")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }

@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -70,10 +71,6 @@
     <ProjectReference Include="..\CongDoan.Service\CongDoan.Service.csproj">
       <Project>{35b111ce-3a6e-4c84-9c96-ea9739c6164f}</Project>
       <Name>CongDoan.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CongDoan.Web\CongDoan.Web.csproj">
-      <Project>{4b705aa0-00ca-428d-ae1f-361df1e1ec0d}</Project>
-      <Name>CongDoan.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
