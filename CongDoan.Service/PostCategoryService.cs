@@ -19,7 +19,7 @@ namespace CongDoan.Service
 
         PostCategory GetById(int id);
 
-        void SaveChange();
+        void SaveChanges();
     }
 
     public class PostCategoryService : IPostCategoryService
@@ -58,7 +58,7 @@ namespace CongDoan.Service
             return this._postCategoryRepository.GetSingleById(id);
         }
 
-        public void SaveChange()
+        public void SaveChanges()
         {
             this._unitOfWork.Commit();
         }
