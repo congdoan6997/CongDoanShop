@@ -36,7 +36,7 @@ namespace CongDoan.Web.Api
         {
             return CreateHttpRequest(requestMessage, () =>
              {
-                 if (ModelState.IsValid)
+                 if (!ModelState.IsValid)
                  {
                      return requestMessage.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                  }
@@ -55,7 +55,7 @@ namespace CongDoan.Web.Api
         {
             return CreateHttpRequest(requestMessage, () =>
             {
-                if (ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     return requestMessage.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
@@ -73,7 +73,7 @@ namespace CongDoan.Web.Api
         {
             return CreateHttpRequest(requestMessage, () =>
              {
-                 if (ModelState.IsValid)
+                 if (!ModelState.IsValid)
                  {
                      return requestMessage.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                  }

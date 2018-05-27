@@ -1,9 +1,10 @@
 ﻿using CongDoan.Model.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 
 namespace CongDoan.Data
 {
-    public class CongDoanShopDbContext : DbContext
+    public class CongDoanShopDbContext : IdentityDbContext<ApplicationUser>
     {
         public CongDoanShopDbContext() : base("CongDoanShop")
         {
@@ -30,9 +31,14 @@ namespace CongDoan.Data
 
         public DbSet<Error> Errors { set; get; }
 
+        public static CongDoanShopDbContext Create()
+        {
+            return new CongDoanShopDbContext();
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<IdentityUserRole>().HasKey(i => new { i.RoleId, i.UserId });
+            modelBuilder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }
