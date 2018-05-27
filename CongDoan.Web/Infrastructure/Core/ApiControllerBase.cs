@@ -70,7 +70,7 @@ namespace CongDoan.Web.Infrastructure.Core
             catch 
             {
 
-                throw;
+                //throw;
             }
         }
 
